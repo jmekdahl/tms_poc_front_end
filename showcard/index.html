@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>Zap2it TV Listings</title>		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+		
+		<link rel="stylesheet" href="css/core.css">
+		<link rel="stylesheet" href="css/showcard.css">
+		
+		<script type="text/javascript" src="http://tvlistings.qa.aws.zappingclouds.com/javascript/lib/jquery-1.4.3.min.js"></script>
+		<script type="text/javascript" src="http://images.zap2it.com/dfp/production/gptSetup.js"></script>
+		<script type="text/javascript">
+			var viewPortWidth = document.documentElement.clientWidth;
+			var profiles = {
+				desktop: {
+					showcard: ["728x91,728x300,970x90,970x250,980x90,980x250", "300x250", "300x250", "728x90"]
+				},
+				tablet: {
+					showcard: ["728x91,728x300,768x128", "300x250", "300x250", "728x90"]
+				},
+				mobile: {
+					showcard: ["320x50", "300x250", "300x250", "320x50"]
+				}
+			};
+			var adProfile = viewPortWidth < 550 ? profiles.mobile : ( viewPortWidth < 1024 ? profiles.tablet : profiles.desktop );
+
+			$.each( adProfile.showcard, function( index, value ){
+				new gptSetup.setAdSlot("zap2itonline/qa/tvl/showcard", value,  "ad-slot-" + ( index + 1 ) , "pos,1&zc,60563&mso,17680&ptyp,sat&usr,r&gdr,m&age,c");
+			});
+			
+			gptSetup.defineAds();
+		</script>
+	</head>
+	<body>
+		<div class="header-wrapper">
+			<div class="header">
+				<img class="logo" src="img/logo.png">
+				<div class="login-status">
+					Welcome, <span class="purple-med">jekdahl@tribune.com</span>
+					<a id="set-prefs" class="link purple-med">Set Preferences</a>
+					<a id="log-out"   class="link purple-med">Log Out</a>
+				</div>
+			</div>
+		</div>
+		<div class="menu-wrapper">
+			<div class="menu">
+				<a href="#" class="first selected">TV</a>
+				<a href="#">TV News</a>
+			</div>
+		</div>
+		<div class="content zap-grid">
+			
+			<!-- BILLBOARD AD -->
+			<div class="zap-grid-1">
+				<div id="ad-slot-1" class="top-leaderboard">
+					<script type="text/javascript">gptSetup.getAd('ad-slot-1');</script>
+				</div>
+				<h1 class="title-large">Game of Thrones</h1>
+			</div>
+			
+			<!-- MENU AND DECISION MAKING INFO -->
+			<div id="top-module" class="zap-grid-2-3 fl-left">
+				<div id="menu-showcard">
+					<a href="#dec-module" rel="nav-link">Overview</a>
+					<a href="#watch-online-module" rel="nav-link">Watch Online</a>
+					<a href="#" rel="nav-link">Cast</a>
+					<a href="#news" rel="nav-link">News</a>
+					<a href="#tune-in-module" rel="nav-link">TV Times</a>
+					<a href="#" rel="nav-link">Episode Guide</a>
+					<a href="#gallery" rel="nav-link">Images</a>
+					<a href="#" rel="nav-link">Follow</a>
+				</div>
+				<div id="dec-module" class="zap-grid-1">
+						<div id="gallery" class="zap-grid-1-2 fl-left">
+							<img src="img/game-of-thrones.jpg" class="large" />
+							<img src="img/got-thumb-1.jpg" class="low-prio" />
+							<img src="img/got-thumb-2.jpg" class="low-prio" />
+							<img src="img/got-thumb-3.jpg" class="low-prio" />
+							<img src="img/got-thumb-1.jpg" class="low-prio" />
+						</div>
+						<div id="dec-info" class="zap-grid-1-2 fl-right">
+							<div id="genre" class="zap-grid-1-2 fl-left">
+								<p><strong>Genre</strong><br /> Drama, Fantasy, Comedy, Crime</p>
+							</div>
+							<div id="seasons" class="zap-grid-1-2 fl-right">
+								<p><strong>Seasons</strong> 4</p>
+							</div>
+							<div id="episodes" class="zap-grid-1-2 fl-right">
+								<p><strong>Episodes</strong> 41</p>
+							</div> 
+							<div id="desc" class="zap-grid-1">
+								<p><strong>Description</strong><br /> Space. The final frontier. These are the voyages of the Starship Enterprise.  Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
+							</div>
+						</div>
+					</div>
+			</div>
+				
+			<!-- RIGHT RAIL PT 1 -->
+			<div id="right-module-1" class="right-module zap-grid-1-3 fl-right">
+				<div class="zap-grid-1 ad-slot">
+					<div id="ad-slot-2" class="ad">
+						<script type="text/javascript">gptSetup.getAd('ad-slot-2');</script>
+					</div>
+				</div>
+				<div class="zap-grid-1">
+					<div id="news">
+						<h2 class="default-title sml">News</h2>
+						<div id="stories">
+							<p>
+								<img src="http://media.sfx.co.uk/files/2011/03/110311game-of-thrones_small.jpg" />
+								<a href="#" rel="blog-article">'Game of Thrones' Season 3 Episode 6 Recap: 'The Climb'</a>
+								<br />
+								<strong>By Terry Schwartz</strong>
+								<br />
+								<span class="date-published">May 5, 2013</span>
+							</p>
+							<p>
+								<a href="#" rel="blog-article">'Game of Thrones' Season 3 Episode 7 Preview: Really long title to test what this looks like. Is this real life?</a>
+								<br />
+								<strong>By Terry Schwartz</strong>
+								<br />
+								<span class="date-published">May 6, 2013</span>
+							</p>
+							<p>
+								<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Kit_Harington_2011_cropped.jpg/220px-Kit_Harington_2011_cropped.jpg" />
+								<a href="#" rel="blog-article">'Game of Thrones' actor Kit Harrington sexiest girly man alive</a>
+								<br />
+								<strong>By Terry Schwartz</strong>
+								<br />
+								<span class="date-published">May 6, 2013</span>
+							</p>
+						</div>
+						<a href="#" rel="more-link">More News</a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- TUNE IN -->
+			<div id="tune-in-module" class="zap-grid-2-3 fl-left">
+				<div id="tune-in">
+					<h2 class="default-title med"><span class="low-prio">Game of Thrones</span> TV Times (<a href="#">6<span class="low-prio"> Airings</span></a>)</h2>
+					<div class="zap-grid-1 episode">
+						<div class="zap-grid-3-10 info">
+							<a href="#" rel="episode-detail">The One With the Bear</a>
+							<br />
+							<strong>Season 3, Episode 6</strong>
+							<br />
+							<span class="oad">First Aired May 5, 2013</span>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dapibus dui. Duis sodales ...
+							</p>
+						</div>
+						<div class="zap-grid-5-10">
+							<ul>
+								<li class="zap-grid-2-10">Tuesday</li>
+								<li class="zap-grid-4-10">9:30-10:30 PM</li>
+								<li class="zap-grid-1-10">93</li>
+								<li class="zap-grid-2-10">HBO</li>
+							</ul>
+							<ul>
+								<li class="zap-grid-2-10">&nbsp;</li>
+								<li class="zap-grid-4-10">&nbsp;</li>
+								<li class="zap-grid-1-10">193</li>
+								<li class="zap-grid-2-10">HBO HD</li>
+							</ul>
+							<ul>
+								<li class="zap-grid-2-10">Friday</li>
+								<li class="zap-grid-4-10">10:30-11:30 PM</li>
+								<li class="zap-grid-1-10">93</li>
+								<li class="zap-grid-2-10">HBO</li>
+							</ul>
+							<ul>
+								<li class="zap-grid-2-10">&nbsp;</li>
+								<li class="zap-grid-4-10">&nbsp;</li>
+								<li class="zap-grid-1-10">193</li>
+								<li class="zap-grid-2-10">HBO HD</li>
+							</ul>
+						</div>
+						<div class="zap-grid-2-10">
+							<a href="" rel="action">Remind Me</a>
+							<a href="" rel="action">Record</a>
+						</div>
+					</div>
+					<div class="zap-grid-1 episode">
+						<div class="zap-grid-3-10 info">
+							<a href="#" rel="episode-detail">The One With the Bear</a>
+							<br />
+							<strong>Season 3, Episode 6</strong>
+							<br />
+							<span class="oad">First Aired May 5, 2013</span>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dapibus dui. Duis sodales ...
+							</p>
+						</div>
+						<div class="zap-grid-5-10">
+							<ul>
+								<li class="zap-grid-2-10">Tuesday</li>
+								<li class="zap-grid-4-10">9:30-10:30 PM</li>
+								<li class="zap-grid-1-10">93</li>
+								<li class="zap-grid-2-10">HBO</li>
+							</ul>
+							<ul>
+								<li class="zap-grid-2-10">&nbsp;</li>
+								<li class="zap-grid-4-10">&nbsp;</li>
+								<li class="zap-grid-1-10">193</li>
+								<li class="zap-grid-2-10">HBO HD</li>
+							</ul>
+							<ul>
+								<li class="zap-grid-2-10">Friday</li>
+								<li class="zap-grid-4-10">10:30-11:30 PM</li>
+								<li class="zap-grid-1-10">93</li>
+								<li class="zap-grid-2-10">HBO</li>
+							</ul>
+							<ul>
+								<li class="zap-grid-2-10">&nbsp;</li>
+								<li class="zap-grid-4-10">&nbsp;</li>
+								<li class="zap-grid-1-10">193</li>
+								<li class="zap-grid-2-10">HBO HD</li>
+							</ul>
+						</div>
+						<div class="zap-grid-2-10">
+							<a href="" rel="action">Remind Me</a>
+							<a href="" rel="action">Record</a>
+						</div>
+					</div>
+					<div class="zap-grid-1 episode">
+						<div class="zap-grid-3-10 info">
+							<a href="#" rel="episode-detail">The One With the Bear</a>
+							<br />
+							<strong>Season 3, Episode 6</strong>
+							<br />
+							<span class="oad">First Aired May 5, 2013</span>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dapibus dui. Duis sodales ...
+							</p>
+						</div>
+						<div class="zap-grid-5-10">
+							<ul>
+								<li class="zap-grid-2-10">Tuesday</li>
+								<li class="zap-grid-4-10">9:30-10:30 PM</li>
+								<li class="zap-grid-1-10">93</li>
+								<li class="zap-grid-2-10">HBO</li>
+							</ul>
+							<ul>
+								<li class="zap-grid-2-10">&nbsp;</li>
+								<li class="zap-grid-4-10">&nbsp;</li>
+								<li class="zap-grid-1-10">193</li>
+								<li class="zap-grid-2-10">HBO HD</li>
+							</ul>
+							<ul>
+								<li class="zap-grid-2-10">Friday</li>
+								<li class="zap-grid-4-10">10:30-11:30 PM</li>
+								<li class="zap-grid-1-10">93</li>
+								<li class="zap-grid-2-10">HBO</li>
+							</ul>
+							<ul>
+								<li class="zap-grid-2-10">&nbsp;</li>
+								<li class="zap-grid-4-10">&nbsp;</li>
+								<li class="zap-grid-1-10">193</li>
+								<li class="zap-grid-2-10">HBO HD</li>
+							</ul>
+						</div>
+						<div class="zap-grid-2-10">
+							<a href="" rel="action">Remind Me</a>
+							<a href="" rel="action">Record</a>
+						</div>
+					</div>
+				</div>
+				<a href="#" rel="more-link">All TV Times (6 <span class="low-prio">Airings</span>)</a>
+			</div>
+			
+			<!-- RIGHT RAIL PT 2 -->
+			<div id="right-module-2" class="right-module zap-grid-1-3 fl-right">
+				<div class="zap-grid-1 ad-slot">
+					<div id="ad-slot-3" class="ad">
+						<script type="text/javascript">gptSetup.getAd('ad-slot-3');</script>
+					</div>
+				</div>
+				<div class="zap-grid-1">
+					<div id="recommendations">
+						<h2 class="default-title sml">You May also Like</h2>
+						<p>
+							"Feels so right it cant be wrong. Rockin' and rollin' all week long."
+						</p>
+						<a href="#" rel="more-link">More Recommendations</a>
+					</div>
+				</div>
+				<div class="zap-grid-1">
+					<div id="editors-feature">
+						<h2 class="default-title sml">Editor's Feature</h2>
+						<p>
+							"Feels so right it cant be wrong. Rockin' and rollin' all week long."
+							<br /><span class="author">-Jon Snow</span>
+						</p>
+						
+						<a href="#" rel="more-link">More Editor's Features</a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- WATCH ONLINE -->
+			<div id="watch-online-module" class="zap-grid-2-3 fl-left">
+				<div id="watch-online">
+					<h2 class="default-title med">Watch Online (<a href="#">27<span class="low-prio"> Episodes</span></a>)</h2>
+					<div class="zap-grid-1-4">
+						<p>
+							<span class="img-wrapper">
+								<img src="http://www.seattlemet.com/images/change?src=%2Fdata%2Fimages%2F2013%2F3%2Fimage%2F28483%2Fgame_of_thrones_jon_snow.jpeg&cropify=487x325%2B36%2B0&resize=210x140!" />
+							</span>
+							<a href="#" rel="episode-detail">Episode Title</a>
+							<strong>Season 3, Episode 7</strong>
+							First Aired May 15, 2013
+						</p>
+					</div>
+					<div class="zap-grid-1-4">
+						<p>
+							<span class="img-wrapper">
+								<img src="http://www.vanityfair.com/online/oscars/2013/08/game-of-thrones-gay-bar-video/jcr:content/cn_page_metadata/search.rendition.facebookThumbnail.s-peter-dinklage-game-of-thrones-gay-bar.jpg" />
+							</span>
+							<a href="#" rel="episode-detail">Episode Title</a>
+							<strong>Season 3, Episode 7</strong>
+							First Aired May 15, 2013
+						</p>
+					</div>
+					<div class="zap-grid-1-4">
+						<p>
+							<span class="img-wrapper">
+								<img src="http://media.sfx.co.uk/files/2011/06/game-of-thrones-khal-drogo.jpg" />
+							</span>
+							<a href="#" rel="episode-detail">Episode Title</a>
+							<strong>Season 3, Episode 7</strong>
+							First Aired May 15, 2013
+						</p>
+					</div>
+					<div class="zap-grid-1-4">
+						<p>
+							<span class="img-wrapper">
+								<img src="http://www.seattlemet.com/images/change?src=%2Fdata%2Fimages%2F2013%2F3%2Fimage%2F28292%2Fdaenerys-dragon-19201.jpg&cropify=1350x900%2B125%2B0&resize=210x140!" />
+							</span>
+							<a href="#" rel="episode-detail">Episode Title</a>
+							<strong>Season 3, Episode 7</strong>
+							First Aired May 15, 2013
+						</p>
+					</div>
+					<a href="#" rel="more-link">All Online Episodes (27 Episodes)</a>
+				</div>
+			</div>
+			
+			<div class="zap-grid-1 ad-slot">
+				<div id="ad-slot-4" class="">
+					<script type="text/javascript">gptSetup.getAd('ad-slot-4');</script>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
