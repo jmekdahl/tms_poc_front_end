@@ -1,0 +1,171 @@
+.content
+	{ padding:0 .5em 5em .5em }
+
+#menu-showcard
+	{ overflow:auto }
+
+#menu-showcard a[rel="nav-link"]
+	{ 
+		color:#FFF; width:21.5%; background:#BEA4CA; padding:.5% 1.5%;
+		display:block; float:left; text-align:center; margin:.5% .5% 0 0;
+		font-size:.85em; font-weight:600
+	}	
+
+#dec-module img
+	{ width:24%; margin:1% 1% 0 0; float:left }
+
+#dec-module .large
+	{ width:99% }
+
+#dec-module p
+	{ margin:1em .5em 0 .5em; font-size:.85em }
+
+.right-module
+	{overflow:auto;}
+
+.right-module .zap-grid-1 div
+	{ padding:1em .75em }
+
+.right-module a[rel="more-link"]
+	{ margin-top:.5em; width:100% }
+
+.right-module .ad-slot, .right-module .ad-slot div
+	{ padding:0; margin:0 auto }
+
+#right-module-1 #news, #right-module-2 #recommendations, 
+#right-module-2 #editors-feature
+	{ margin-top:1.5em }
+
+#right-module-1 #news #stories 
+	{ padding:0 }
+
+#right-module-1 #news #stories p
+	{ 
+		font-size:.75em; padding:1em 0; border-bottom:1px solid #DDD; 
+		line-height:150%; overflow:auto
+	}
+
+#right-module-1 #news #stories p:last-child
+	{ border:none }
+
+#right-module-1 #news #stories p img
+	{ float:left; width:100px; padding-right:.5em}
+
+#right-module-2 #editors-feature p
+	{ padding:2em 3em }
+
+#right-module-2 #editors-feature p .author 
+	{ 
+		font-style:oblique; color:#CCC; text-align:right; width:90%; 
+		margin:0 auto; display:block;
+	}
+
+#tune-in-module, #right-module-2, #watch-online-module
+	{ margin-top:2em }
+
+#tune-in-module a[rel="more-link"]
+	{ margin-top:1em }
+
+
+#tune-in
+	{ padding:1em .5em 0 0; font-size:.85em }
+
+#tune-in .episode:nth-child(odd)
+	{ background:#FAFAFA }
+
+#tune-in .episode:last-child
+	{ border:none }
+
+#tune-in .episode
+	{ padding:1em 0; border-bottom: 1px solid #742882 }
+
+a[rel="episode-detail"], a[rel="blog-article"]
+	{ text-transform:uppercase; color:#6ABAFC; font-weight:600 }
+
+#tune-in .info p
+	{ padding:1em 0 0 0 }
+
+#tune-in  ul
+	{ overflow:auto; margin:0; padding:0 5%; line-height:150%}
+
+#tune-in  li
+	{ 
+		float:left; list-style:none outside none; overflow:hidden; 
+		text-align:left; margin:0;
+	}
+
+#tune-in .weekday
+	{ width:20% }
+
+#tune-in .time
+	{ width:40% }
+
+#tune-in .chan
+	{ width:10% }
+
+#tune-in .sign
+	{ width:20% }
+
+#tune-in a[rel="action"]
+	{
+		width:70%; display:block; margin-bottom:2em; float:right; 
+		font-weight:600; color:#742882;
+	}
+
+#watch-online-module p
+	{ padding:.75em .25em 1em .25em; font-size:.85em }
+
+#watch-online .img-wrapper
+	{ width:90%; height:50%; overflow:hidden }
+
+#watch-online .img-wrapper img
+	{ width:100% }
+
+@media (max-width: 980px){
+	#top-module, #tune-in-module, #watch-online-module
+		{ width:100% }
+
+	.right-module .zap-grid-1
+		{ width:50%; float:left }
+
+	.right-module
+		{ width:100%; margin:1.5em 0 }
+	
+	#right-module-1 #news
+		{margin:0; padding-top:0}
+}
+
+@media (max-width: 550px){
+	.title-large
+		{ padding:.02em; font-size:2.5em }
+
+	#menu-showcard a[rel="nav-link"]
+		{ width:46%; margin:1% .5% 0 .5% }
+
+	#dec-module img
+		{ margin:3% .5% 0 .5% }
+
+	#dec-module #dec-info #genre, #dec-module #dec-info #seasons, 
+	#dec-module #dec-info #episodes
+		{ width:50% }
+
+	.right-module .zap-grid-1
+		{ width:100%; float:none }
+
+	.right-module #headline div
+		{ padding:1em .5em }
+
+	.right-module #headline a[rel="more-link"] 
+		{ width:310px }
+
+	#tune-in .zap-grid-3-10, #tune-in .zap-grid-5-10
+		{ width:100% }
+
+	#tune-in ul 
+		{ padding:0 }
+
+	#tune-in .episode .info p
+		{ padding:.5em 0 2em 0}
+
+
+}
