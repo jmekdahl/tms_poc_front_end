@@ -2,10 +2,11 @@
 <html>
 	<head>
 		<title>Testing Mustache</title>
-		<!-- TODO: get Grunt or some other compiler to aggregate and minifiy many scripts to reduce connections -->
+		<!-- TODO: get Grunt or some other compiler to aggregate and minify many scripts to reduce connections -->
 		<!-- Third Party Libraries -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/mustache.js"></script>
+		
 		<!-- HTML Templates for Mustache to render -->
 		<script type="text/javascript" src="js/mustache_templates.js"></script>
 		<!-- API specific utilities and template callbacks -->
@@ -14,13 +15,13 @@
 		<script type="text/javascript" src="js/showcard.js"></script> 
 		
 		<script type="text/javascript">
-			var seriesId = "185044"; //root id for "House", presumably we get an API that uses something better
+			var seriesId = "185044";        //root id for "House", presumably we get an API that uses TMS ID
 		</script>
 	</head>
 	<body>
 		<div id="show-overview"></div>
 		<div id="episodes">
-			<a href="#" rel="ajax">Load Episodes</a>
+			<a href="#" rel="ajaxEpisodes">Load Episodes</a>
 		</div>
 	</body>
 </html>
